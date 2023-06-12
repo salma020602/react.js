@@ -1,5 +1,5 @@
 import {useState} from "react"
-
+import ShowCount from "./components/ShowCount"
 function App()
 {
   const [count,setCount] = useState(0)
@@ -18,11 +18,12 @@ function App()
     //jsx
      <div>
     <button OnClick = {increase} > Increase </ button >
-    <h1> {count} </h1>
+    <ShowCount count={count}/>
     <button onClick= {decrease} > Decrease  </button>
-     </div>
-
+    </div>
   )
+
+
 }
 
 export default App;
