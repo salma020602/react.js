@@ -1,4 +1,4 @@
-import {useState} from "react"
+/*import {useState} from "react"
 import ShowCount from "./components/ShowCount"
 function App()
 {
@@ -26,4 +26,16 @@ function App()
 
 }
 
+export default App; */
+
+function App()
+{
+  var a = ["salma","shaheda","sajida"]
+  var elements = a.map(item => <h1>{item}</h1>)
+  return(
+    <div>
+      {elements}
+    </div>
+  )
+}
 export default App;
